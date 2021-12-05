@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.Kirb {
+  transform: scale(0.5);
+}
+
+.MouthOpen {
+  opacity: 100%;
+  transform: all 10ms ease-in-out;
+}
+
+.MouthClosed {
+  opacity: 0%;
+  transform: all 10ms ease-in-out;
+}
+
+.inhale {
+  opacity: 100%;
+  transform: all 10ms ease-in-out;
+}
+
+.notInhale {
+  opacity: 0%;
+  transform: all 10ms ease-in-out;
+}
+
+.EyesOpen {
+  opacity: 100%;
+  transform: all 10ms ease-in-out;
+}
+
+.EyesClosed {
+  opacity: 0%;
+  transform: all 10ms ease-in-out;
+}
+
+.inhaleBouncy {
+  animation: bouncyKirb 0.5s linear 0s 8;
+}
+
+.bouncyKirby {
+  animation: bouncyKirb 2s linear 0s 2;
+}
+
+@keyframes bouncyKirb {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.RightArmStill {
+}
+
+.RightArmMove {
+  animation: rightArmMove 0.5s linear 0s 2;
+}
+
+@keyframes rightArmMove {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  25% {
+    transform: rotate(-3deg) translate(-20px, -60px);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  75% {
+    transform: rotate(-3deg) translate(-20px, -60px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+
+.inhaleRightArmMove {
+  animation: inhaleRightArmMove 4s linear 0s 1;
+}
+
+@keyframes inhaleRightArmMove {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  5% {
+    transform: rotate(-3deg) translate(-20px, -60px);
+  }
+  95% {
+    transform: rotate(-3deg) translate(-20px, -60px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+
+.LeftArmStill {
+}
+
+.LeftArmMove {
+  animation: leftArmMove 0.5s linear 0s 2;
+}
+
+@keyframes leftArmMove {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  25% {
+    transform: rotate(10deg) translate(60px, -130px);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  75% {
+    transform: rotate(10deg) translate(60px, -130px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+
+.inhaleLeftArmMove {
+  animation: inhaleLeftArmMove 4s linear 0s 1;
+}
+
+@keyframes inhaleLeftArmMove {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  5% {
+    transform: rotate(10deg) translate(60px, -130px);
+  }
+  95% {
+    transform: rotate(10deg) translate(60px, -130px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+
+@font-face {
+  font-family: bubble-bobble;
+  src: url(./kirbSVGmedia/bubble-bobble.ttf);
+}
+
+.bubbleHeader {
+  font-family: "bubble-bobble";
+  color: rgb(223, 248, 248);
+  padding-top: 100px;
+  padding-bottom: 0px;
+  font-size: 65px;
+  letter-spacing: 10px;
+  text-align: center;
+  animation: bubbleHeader 1s ease-in-out infinite alternate;
+}
+
+@keyframes bubbleHeader {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(179, 223, 248),
+      0 0 30px #7890bd, 0 0 40px #7890bd, 0 0 50px #7890bd, 0 0 60px #7890bd,
+      0 0 70px #7890bd;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b5cbfa, 0 0 40px #b5cbfa,
+      0 0 50px #b5cbfa, 0 0 60px #b5cbfa, 0 0 70px #b5cbfa, 0 0 80px #b5cbfa;
+  }
+}
