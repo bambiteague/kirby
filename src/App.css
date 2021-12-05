@@ -177,3 +177,14 @@
       0 0 50px #b5cbfa, 0 0 60px #b5cbfa, 0 0 70px #b5cbfa, 0 0 80px #b5cbfa;
   }
 }
+
+.noBubbleHeader {
+  font-family: "bubble-bobble";
+  color: rgba(223, 248, 248, 0);
+  padding-top: 100px;
+  padding-bottom: 0px;
+  font-size: 65px;
+  letter-spacing: 10px;
+  text-align: center;
+  opacity: 0
+}

@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="bubbleHeader">ZZZZ...</div>
+      <div className={!isHover ? "bubbleHeader" : "noBubbleHeader"}>ZZZZ...</div>
       <Kirb
         isHover={isHover}
         setIsHover={setIsHover}
