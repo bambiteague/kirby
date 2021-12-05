@@ -36,7 +36,16 @@ function App() {
 
   return (
     <div className="App">
-      <div className={!isHover ? "bubbleHeader" : "noBubbleHeader"}>ZZZZ...</div>
+      <div className={!isHover ? "bubbleHeader" : "noBubbleHeader"}>
+        <span className="first">Z</span>
+        <span className="second">Z</span>
+        <span className="third">Z</span>
+        <span className="fourth">Z</span>
+        <span className="fifth">.</span>
+        <span className="sixth">.</span>
+        <span className="seventh">.</span>
+        </div>
+      
       <Kirb
         isHover={isHover}
         setIsHover={setIsHover}
